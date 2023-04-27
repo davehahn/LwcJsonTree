@@ -1,0 +1,27 @@
+<template>
+    <div class="slds-card slds-p-left_small slds-p-right_small">
+        <div class={sectionClass}>
+            <h3 class="">
+                <button
+                    class="slds-p-around_xx-small slds-button slds-section__title-action"
+                    onclick={handleSectionToggle}
+                >
+                    <lightning-icon
+                        icon-name="utility:switch"
+                        size="x-small"
+                        class="slds-m-left_xx-small slds-section__title-action-icon slds-button__icon slds-button__icon_left"
+                    ></lightning-icon>
+                    <span class="slds-truncate" title="Section Title">{title}</span>
+                </button>
+            </h3>
+            <div aria-hidden="false" class="slds-section__content slds-p-around_small">
+                <template lwc:if={hasJsonData}>
+                    <div class="json-viewer" lwc:dom="manual"></div>
+                </template>
+                <template lwc:else>
+                    No Data Supplied
+                </template>
+            </div>
+        </div>
+    </div>
+</template>
