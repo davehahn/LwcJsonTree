@@ -24,7 +24,7 @@ An LWC component for JSON formatting/viewing based on jsonTreeViewer. This basic
    ###### jsonDemo.js
 
    ```javascript
-   import { LightningElement, api, wire, track } from "lwc";
+   import { LightningElement, api, wire } from "lwc";
    import { getRecord, getFieldValue } from "lightning/uiRecordApi";
    import REQUEST_BODY_FIELD from "@salesforce/schema/SomeObject.SomeJsonField__c";
 
@@ -32,7 +32,6 @@ An LWC component for JSON formatting/viewing based on jsonTreeViewer. This basic
 
    export default class JsonDemo extends LightningElement {
      @api recordId;
-     @track scriptsLoaded = false;
 
      @wire(getRecord, { recordId: "$recordId", fields: FIELDS })
      wiredJson;
