@@ -50,20 +50,20 @@ An LWC component for JSON formatting/viewing based on jsonTreeViewer. This basic
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
-       <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
-           <apiVersion>56.0</apiVersion>
-           <isExposed>true</isExposed>
-           <targets>
-               <target>lightning__RecordPage</target>
-           </targets>
-           <targetConfigs>
-               <targetConfig targets="lightning__RecordPage">
-                   <objects>
-                       <object>SomeObject</object>
-                   </objects>
-               </targetConfig>
-           </targetConfigs>
-       </LightningComponentBundle>
+   <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+     <apiVersion>56.0</apiVersion>
+     <isExposed>true</isExposed>
+     <targets>
+         <target>lightning__RecordPage</target>
+     </targets>
+     <targetConfigs>
+         <targetConfig targets="lightning__RecordPage">
+             <objects>
+                 <object>SomeObject</object>
+             </objects>
+         </targetConfig>
+     </targetConfigs>
+   </LightningComponentBundle>
    ```
 
    3. Add your new component to the Lightning Record Page for "SomeObject" and enjoy.
